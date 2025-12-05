@@ -14,7 +14,8 @@
 * It defines common functions like transfer, approve, allowance, and balanceOf,
 * so wallets and applications can interact with your token easily.
 * ERC-20 tokens act like a digital currency inside the Ethereum ecosystem.
-* ### 
+
+### 
 
 ### 
 
@@ -100,9 +101,7 @@ transferFrom(owner, to, amount)
 
 
 1. Transfer to zero address
-   
 2. Transfer more than balance
-   
 3. transferFrom without approval
 
 
@@ -226,8 +225,3 @@ my-token/
 
 
 * How to structure a GitHub smart-contract project
-
-
-
-
-
