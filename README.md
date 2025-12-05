@@ -6,9 +6,17 @@
 * Decimals: 18
 * Total Supply: 1,000,000 MTK (1 million × 10^18)
 
+### 
 
+### What Are ERC-20 Tokens?
 
+* ERC-20 is a standard for creating fungible tokens on Ethereum.
+* It defines common functions like transfer, approve, allowance, and balanceOf,
+* so wallets and applications can interact with your token easily.
+* ERC-20 tokens act like a digital currency inside the Ethereum ecosystem.
+* ### 
 
+### 
 
 ### Features:
 
@@ -19,11 +27,13 @@
 * Transfer \& Approval events
 * Token metadata (name, symbol, decimals, total supply)
 
-&nbsp;
+ 
 
 ### 
 
-### How to Deploy (Remix IDE):
+### 
+
+### Deployment (Remix IDE):
 
 
 
@@ -49,55 +59,95 @@
 
 ### 
 
-### How to Use \& Test:
+### 
+
+### Usage \& Test:
 
 
 
-* Check Balance
+1.Check Balance
 
 Use: balanceOf(address)
 
 
 
-* Transfer Tokens
+2.Transfer Tokens
 
 transfer(to, amount)
 
 
 
-* Example amount for 1 token with 18 decimals:
+3.Example amount for 1 token with 18 decimals:
 
 1000000000000000000
 
 
 
-* Approve a Spender
+4.Approve a Spender
 
 approve(spender, amount)
 
 
 
-* Transfer Using transferFrom
+5.Transfer Using transferFrom
 
 transferFrom(owner, to, amount)
 
-Edge Cases (Should Fail)
+
+
+##### Edge Cases (Should Fail)
 
 
 
-* Transfer to zero address
+1. Transfer to zero address
+   
+2. Transfer more than balance
+   
+3. transferFrom without approval
 
 
 
-* Transfer more than balance
+### 
+
+### Testing Performed
 
 
 
-* transferFrom without approval
+* Transfer between accounts → ✔️
+
+
+
+* Balance updated correctly → ✔️
+
+
+
+* Approve and TransferFrom → ✔️
+
+
+
+* Transfer more than balance → ❌ (expected fail)
+
+
+
+* Transfer without approval → ❌ (expected fail)
+
+
+
+* Transfer to zero address → ❌ (expected fail)
 
 
 
 
+
+
+
+
+
+
+
+
+
+### 
 
 ### Project Structure:
 
@@ -125,11 +175,9 @@ my-token/
 
 └── (optional) LEARNING.md
 
+### 
 
-
-
-
-
+### 
 
 ### Screenshots Included:
 
@@ -152,3 +200,34 @@ my-token/
 
 
 * events.png
+
+
+
+
+
+### What I Learned?
+
+
+
+* How ERC-20 tokens work
+
+
+
+* How to deploy and test in Remix
+
+
+
+* How allowance \& TransferFrom function
+
+
+
+* How events track token activity
+
+
+
+* How to structure a GitHub smart-contract project
+
+
+
+
+
